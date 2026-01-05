@@ -70,6 +70,13 @@ h3 {
   border-bottom: 1px solid black;
   cursor: pointer;
 }
+.left {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  left: 80%;
+}
 .right .tooltipText {
   position: absolute;
   visibility: hidden;
@@ -82,6 +89,21 @@ h3 {
   top: -5px;
   left: 115%;
 }
+.left .tooltipText {
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: -5px;
+  right: 115%;
+}
 .right:hover .tooltipText {
+  visibility: visible;
+}
+.left:hover .tooltipText {
   visibility: visible;
 }
