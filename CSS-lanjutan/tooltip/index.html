@@ -21,7 +21,36 @@
                     <span class="text">lebih banyak teks</span>
                 </div>
             </div>
-            
+            <div class="penjelasan">
+                <h3>contoh yang dijelaskan</h3>
+                <p><strong>HTML:</strong></p>
+                <ul>
+                    <li>
+                        Gunakan elemen wadah (seperti <code>&lt;div&gt;</code>) dan tambahkan kelas <span>"tooltip"</span>.
+                        Ketika mouse pengguna di atas <code>&lt;div&gt;</code> ini, itu akan menunjukkan teks tooltip.
+                    </li>
+                    <li>
+                        Teks tooltip ditempatkan di dalam elemen inline(seperti <code>&lt;span&gt;</code>) dengan
+                        <span>class="text"</span>.
+                    </li>
+                </ul>
+                <p><strong>CSS:</strong></p>
+                <ul>
+                    <li>
+                        Bagian class <span>tooltip</span> menggunakan <span>position= relative;</span>, yang diperlukan
+                        untuk memposisikan class <span>text</span> secara (<span>position: absolute;</span>). <strong>Tip:</strong>
+                        lihat contoh di bawah ini tentang cara memposisikan tooltip.
+                    </li>
+                    <li>
+                        Bagian class <span>text</span> memegang bagian text tooltip ketika di hover. Hal ini tersembunyi secara
+                        default, dan akan terlihat pada saat di hover.
+                    </li>
+                    <li>
+                        Bagian <span>:hover</span> digunakan untuk menampilkan teks tooltip ketika pengguna mengarahkan cursor ke atas
+                        class <span>tooltip</span>.
+                    </li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
