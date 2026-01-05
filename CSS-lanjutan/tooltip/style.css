@@ -61,3 +61,27 @@ h3 {
   /* Menampilkan tooltip saat hover */
   visibility: visible;
 }
+
+/* position tooltip */
+/* tooltip right block */
+.right {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.right .tooltipText {
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: -5px;
+  left: 115%;
+}
+.right:hover .tooltipText {
+  visibility: visible;
+}
