@@ -340,15 +340,10 @@ h3 {
    visibility: hidden;
   position: absolute;
   width: 160px;
+  top: 0;
+  right: 100%;
+  margin: -10px 10px;
   text-align: center;
-  /* bottom: 100%; digunakan untuk menempatkan tooltip di atas elemen induk, dengan jarak 100% dari bawah elemen induk */
-  bottom: 100%;
-  /* left: 50%; digunakan untuk menempatkan tooltip pada posisi horizontal 50% dari kiri elemen induk */
-  left: 50%;
-  /* margin-left: -80px; digunakan untuk menggeser tooltip ke kiri sebesar setengah lebarnya (80px dari 160px),
-     sehingga tooltip terpusat pada posisi left: 50% */
-  margin-left: -80px;
-  margin-bottom: 10px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
@@ -361,12 +356,12 @@ h3 {
      sehingga arrow dapat ditempatkan di posisi yang tepat tanpa mempengaruhi layout */
   position: absolute;
   /* top: 100%; digunakan untuk menempatkan arrow di bawah tooltip, dengan jarak 100% dari atas tooltip */
-  top: 100%;
+  top: 50%;
   /* left: 50%; digunakan untuk menempatkan arrow pada posisi horizontal tengah dari tooltip */
-  left: 50%;
+  left: 100%;
   /* margin-left: -5px; digunakan untuk menggeser arrow ke kiri sebesar setengah lebar border (5px dari 10px total),
      sehingga arrow terpusat pada posisi left: 50% */
-  margin-left: -5px;
+  margin-top: -5px;
   /* border-width: 7px; digunakan untuk mengatur lebar border yang membentuk arrow,
      dengan lebar 7px untuk membuat ukuran arrow yang sesuai */
   border-width: 7px;
@@ -375,8 +370,5 @@ h3 {
   border-style: solid;
   /* border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent; digunakan untuk mengatur warna border,
      dengan warna hitam transparan di atas dan transparan di sisi lain, sehingga hanya border atas yang terlihat sebagai arrow */
-  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
-  /* border-top: 7px solid rgba(0, 0, 0, 0.5);
-  border-right: 7px solid transparent;
-  border-left: 7px solid transparent; */
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
 }
