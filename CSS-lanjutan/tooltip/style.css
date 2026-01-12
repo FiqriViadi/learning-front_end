@@ -124,7 +124,7 @@ h3 {
 }
 
 /* tooltip top-aligned */
-.top {
+.top, .bottom {
   /* display: inline-block; digunakan agar elemen tooltip dapat ditempatkan inline dengan teks,
      namun tetap memiliki properti block seperti lebar dan tinggi untuk positioning absolut */
   display: inline-block;
@@ -135,6 +135,9 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+.bottom {
+  top: 5%;
 }
 .top .tooltipText {
   /* visibility: hidden; digunakan untuk menyembunyikan tooltip secara default tanpa mengubah layout halaman,
@@ -160,7 +163,32 @@ h3 {
      sehingga tooltip tidak tertutup oleh elemen yang memiliki z-index lebih rendah atau default */
   z-index: 1;
 }
-.top:hover .tooltipText {
+.bottom .tooltipText {
+  /* visibility: hidden; digunakan untuk menyembunyikan tooltip secara default tanpa mengubah layout halaman,
+     berbeda dengan display: none yang akan menghilangkan ruang yang ditempati elemen */
+  visibility: hidden;
+  /* position: absolute; digunakan untuk memposisikan tooltip secara absolut relatif terhadap elemen induk yang memiliki position: relative,
+     sehingga tooltip dapat ditempatkan di posisi yang tepat tanpa mempengaruhi layout normal */
+  position: absolute;
+  width: 140px;
+  /* bottom: 100%; digunakan untuk menempatkan tooltip di atas elemen induk, dengan jarak 100% dari bawah elemen induk */
+  top: 100%;
+  /* left: 70%; digunakan untuk menempatkan tooltip pada posisi horizontal 70% dari kiri elemen induk */
+  left: 70%;
+  /* margin-left: -70px; digunakan untuk menggeser tooltip ke kiri sebesar setengah lebarnya (70px dari 140px),
+     sehingga tooltip terpusat pada posisi left: 70% */
+  margin-left: -70px;
+  background-color: red;
+  color: #ffffff;
+  padding: 5px 0;
+  border-radius: 6px;
+  text-align: center;
+  /* z-index: 1; digunakan untuk memastikan tooltip muncul di atas elemen lain pada halaman,
+     sehingga tooltip tidak tertutup oleh elemen yang memiliki z-index lebih rendah atau default */
+  z-index: 1;
+}
+.top:hover .tooltipText,
+.bottom:hover .tooltipText {
   /* visibility: visible; digunakan untuk menampilkan tooltip saat pengguna melakukan hover pada elemen,
      tanpa mengubah layout halaman, berbeda dengan display: block yang dapat mempengaruhi ruang sekitar */
   visibility: visible;
