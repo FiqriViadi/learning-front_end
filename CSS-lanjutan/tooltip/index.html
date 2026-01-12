@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Tooltip</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>CSS tooltip</h1>
@@ -26,7 +28,8 @@
                 <p><strong>HTML:</strong></p>
                 <ul>
                     <li>
-                        Gunakan elemen wadah (seperti <code>&lt;div&gt;</code>) dan tambahkan kelas <span>"tooltip"</span>.
+                        Gunakan elemen wadah (seperti <code>&lt;div&gt;</code>) dan tambahkan kelas
+                        <span>"tooltip"</span>.
                         Ketika mouse pengguna di atas <code>&lt;div&gt;</code> ini, itu akan menunjukkan teks tooltip.
                     </li>
                     <li>
@@ -38,15 +41,18 @@
                 <ul>
                     <li>
                         Bagian class <span>tooltip</span> menggunakan <span>position= relative;</span>, yang diperlukan
-                        untuk memposisikan class <span>text</span> secara (<span>position: absolute;</span>). <strong>Tip:</strong>
+                        untuk memposisikan class <span>text</span> secara (<span>position: absolute;</span>).
+                        <strong>Tip:</strong>
                         lihat contoh di bawah ini tentang cara memposisikan tooltip.
                     </li>
                     <li>
-                        Bagian class <span>text</span> memegang bagian text tooltip ketika di hover. Hal ini tersembunyi secara
+                        Bagian class <span>text</span> memegang bagian text tooltip ketika di hover. Hal ini tersembunyi
+                        secara
                         default, dan akan terlihat pada saat di hover.
                     </li>
                     <li>
-                        Bagian <span>:hover</span> digunakan untuk menampilkan teks tooltip ketika pengguna mengarahkan cursor ke atas
+                        Bagian <span>:hover</span> digunakan untuk menampilkan teks tooltip ketika pengguna mengarahkan
+                        cursor ke atas
                         class <span>tooltip</span>.
                     </li>
                 </ul>
@@ -67,8 +73,10 @@
                 Dalam contoh ini, tooltip ditempatkan di sebelah kanan (<span>left:105%;</span>) ketika
                 <strong>meng-hover</strong> class <span>tooltip</span>. Juka mencatat bahwa <span>top: -5px;</span>
                 digunakan untuk menempatkan di tengah-tengah elemen wadahnya. Kami menggunakan -5px dikarenakan Teks
-                memiliki top dan bottom padding 5px. Jika anda meningkatkan padding-nya, serta meningkattkan nilai <span>top</span>
-                properti untuk pastikan bahwa itu tetap ditengah (jika ini adalah sesuatu yang anda inginkan). Hal yang sama berlaku
+                memiliki top dan bottom padding 5px. Jika anda meningkatkan padding-nya, serta meningkattkan nilai
+                <span>top</span>
+                properti untuk pastikan bahwa itu tetap ditengah (jika ini adalah sesuatu yang anda inginkan). Hal yang
+                sama berlaku
                 jika anda ingin tooltip ditempatkan di sebelah kiri.
             </p>
             <div class="box-container">
@@ -78,6 +86,8 @@
                     <span class="tooltipText">teks ini mengarah ke kanan</span>
                 </div>
             </div>
+
+            <!-- tooltip left-allign -->
             <div class="box-container">
                 <h3>contoh</h3>
                 <p>Tooltip left-allign</p>
@@ -85,7 +95,26 @@
                     <span class="tooltipText">teks ini mengarah ke kanan</span>
                 </div>
             </div>
+
+            <!-- tolltip top dan bawah align -->
+            <section>
+                <h3>tooltip top and bottom align</h3>
+                <p>
+                    Jika anda ingin tooltip muncul di atas atau di bagian bawah, lihat contoh di bawah ini.
+                    Perhatikan bahwa kita menggunakan <span>margin-left</span> properti dengan nilai minus
+                    70px. Ini untuk memusatkan tootip di atas/ di bawah teks hoverable. Hal ini diatur untuk
+                    setengah dari lebar tooltip(140/2 = 70).
+                </p>
+                <div class="box-container" style="height: 150px;">
+                    <h3>contoh</h3>
+                    <p>Top-aligned tooltip:</p>
+                    <div class="top">hover me
+                        <span class="tooltipText">some tooltip teks</span>
+                    </div>
+                </div>
+            </section>
         </section>
     </div>
 </body>
+
 </html>
