@@ -120,6 +120,48 @@
                     </div>
                 </div>
             </section>
+
+            <!-- tooltip arrows -->
+            <section>
+                <h2>tooltip arrows/panah</h2>
+                <p>
+                    Untuk memebuat arrows yang harus muncul dari sisi tertentu dari tooltip,
+                    tambahkan kontent "kosong" setelah cursor diletakkan di atas teks, dengan
+                    kelas pseudo-elemen <span>::after</span> bersama dengan properti <span>content</span>.
+                    Panah itu sendiri dibuat menggunakan perbatasan. Hak ini akan membuat tooltip terlihat
+                    seperti gelembung pidato.
+                    <br>
+                    Contoh ini menenunjukkan cara menambahkan panah ke bagian bawah tooltip:
+                </p>
+                <div class="box-container" style="height: 200px;">
+                    <h3>arrows bottom</h3>
+                    <p>Panah akan mengarah ke bawah:</p>
+                    <div class="arrows">hover me!
+                        <span class="arrowsBottom">some tooltip text</span>
+                    </div>
+                </div>
+                <div class="box-container" style="height: 200px;">
+                    <h3>arrows top</h3>
+                    <p>Panah akan mengarah ke atas:</p>
+                    <div class="arrows">hover me!
+                        <span class="arrowsTop">some tooltip text</span>
+                    </div>
+                </div>
+                <div class="box-container" style="height: 200px;">
+                    <h3>arrows left</h3>
+                    <p>Panah akan mengarah ke kiri:</p>
+                    <div class="arrows">hover me!
+                        <span class="arrowsLeft">some tooltip text</span>
+                    </div>
+                </div>
+                <div class="box-container" style="height: 200px;">
+                    <h3>arrows right</h3>
+                    <p>Panah akan mengarah ke kanan:</p>
+                    <div class="arrows">hover me!
+                        <span class="arrowsRight">some tooltip text</span>
+                    </div>
+                </div>
+            </section>
         </section>
     </div>
 </body>
