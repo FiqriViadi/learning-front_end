@@ -278,3 +278,48 @@ h3 {
     background-color: bisque;
     padding: 5px;
 }
+/* slide-in top */
+.card .slideIn-top {
+    position: relative;
+    width: 250px;
+}
+.card .slideIn-top .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease;
+    /* backface-visibility: hidden; - Properti ini menyembunyikan sisi belakang elemen saat elemen tersebut dirotasi dalam transformasi 3D.
+       Hal ini mencegah sisi belakang terlihat dan menghindari efek flicker atau tampilan yang tidak diinginkan pada animasi 3D. */
+    backface-visibility: hidden;
+}
+.card .slideIn-top:hover .image {
+    opacity: 0.3;
+}
+.card .slideIn-top .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%,-50%) - Properti vendor-specific untuk Microsoft (sebelumnya digunakan di IE).
+      Ini menggeser elemen ke kiri dan ke atas sebesar 50% dari lebar dan tinggi elemen itu sendiri,
+       yang digunakan untuk memusatkan elemen secara absolut di dalam kontainer induknya. */
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+}
+.card .slideIn-top:hover .overlay {
+    opacity: 1;
+}
+.card .slideIn-top .overlay .box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: bisque;
+    padding: 5px;
+}
