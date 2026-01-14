@@ -152,3 +152,44 @@ h3 {
 .card .opacity .three {
     opacity: 1;
 }
+
+/* position teks pada gambar */
+.position {
+    position: relative;
+    font-weight: bold;
+}
+.position img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.position .topLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.position .topRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.position .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.position .bottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.position .bottomLeft {
+position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
