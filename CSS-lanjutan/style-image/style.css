@@ -193,3 +193,38 @@ h3 {
   left: 0;
   padding: 10px;
 }
+
+/* image overlay */
+.fadeIn-text {
+    position: relative;
+    width: 40%;
+}
+.fadeIn-text .image {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+.fadeIn-text .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: silver;
+}
+.fadeIn-text:hover .overlay {
+    opacity: 1;
+}
+.fadeIn-text .overlay .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
