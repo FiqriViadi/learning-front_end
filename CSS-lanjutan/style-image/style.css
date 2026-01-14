@@ -39,157 +39,157 @@ h3 {
 /* image rounded */
 /* menggunakan border radius */
 .bulat {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
-    gap: 10px;
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
 }
 .bulat1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10px auto;
-    box-shadow: 0 0 20px burlywood, 0 0 20px black;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px auto;
+  box-shadow: 0 0 20px burlywood, 0 0 20px black;
 }
 .bulat2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px burlywood, 0 0 20px black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px burlywood, 0 0 20px black;
 }
 
 /* thumbnail image */
 /* menggunakan border */
 .thumbnail {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 1fr;
-    gap: 20px;
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+  place-items: center;
 }
 .thumbnail1 {
-    width: 300px;
-    height: auto;
-    border: 2px solid maroon;
-    padding: 5px;
+  width: 300px;
+  height: auto;
+  border: 2px solid maroon;
+  padding: 5px;
 }
 .thumbnail2 {
-    width: 300px;
-    height: auto;
-    border: 2px solid rgba(128, 0, 0, 0.3);
-    padding: 5px;
-    cursor: pointer;
-    transition: 0.5s ease;
+  width: 300px;
+  height: auto;
+  border: 2px solid rgba(128, 0, 0, 0.3);
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 .thumbnail2:hover {
-    border: 2px solid rgba(128, 0, 0, 1);
-    transform: scale(1.02);
+  border: 2px solid rgba(128, 0, 0, 1);
+  transform: scale(1.02);
 }
 
 /* responsive image */
 .responsive {
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 
 /* image / card polaroid */
 .card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 1fr;
-    gap: 10px;
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
 }
 .card .polaroid {
-    border: 1px solid rgba(128, 0, 0, 0.3);
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(128, 77, 0, 0.5);
-    text-align: center;
-    cursor: pointer;
-    transition: 300ms ease;
+  border: 1px solid rgba(128, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(128, 77, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+  transition: 300ms ease;
 }
 .card .polaroid:hover {
-    border: 1px solid rgba(128, 0, 0, 1);
-    box-shadow: 0 0 10px rgba(128, 77, 0, 1);
+  border: 1px solid rgba(128, 0, 0, 1);
+  box-shadow: 0 0 10px rgba(128, 77, 0, 1);
 }
 .card .polaroid img {
-    width: 240px;
-    height: auto;
+  width: 240px;
+  height: auto;
 }
 
 /* opacity image */
 .card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 1fr;
-    gap: 10px;
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
 }
 .card .opacity {
-    border: 1px solid rgba(128, 0, 0, 0.3);
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(128, 77, 0, 0.5);
-    text-align: center;
-    cursor: pointer;
-    transition: 300ms ease;
+  border: 1px solid rgba(128, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(128, 77, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+  transition: 300ms ease;
 }
 .card .opacity:hover {
-    border: 1px solid rgba(128, 0, 0, 1);
-    box-shadow: 0 0 10px rgba(128, 77, 0, 1);
+  border: 1px solid rgba(128, 0, 0, 1);
+  box-shadow: 0 0 10px rgba(128, 77, 0, 1);
 }
 .card .opacity img {
-    width: 240px;
-    height: auto;
+  width: 240px;
+  height: auto;
 }
 .card .opacity .one {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 .card .opacity .two {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .card .opacity .three {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* position teks pada gambar */
 .position {
-    position: relative;
-    font-weight: bold;
+  position: relative;
+  font-weight: bold;
 }
 .position img {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 .position .topLeft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
 }
 .position .topRight {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
 }
 .position .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.position .bottomRight{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+.position .bottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
 .position .bottomLeft {
-position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
 }
