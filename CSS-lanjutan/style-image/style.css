@@ -35,3 +35,26 @@ h3 {
   padding: 10px;
   margin: 20px;
 }
+
+/* image rounded */
+/* menggunakan border radius */
+.bulat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 10px;
+    place-items: center;
+}
+.bulat1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px burlywood, 0 0 20px black;
+}
+.bulat2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px burlywood, 0 0 20px black;
+}
