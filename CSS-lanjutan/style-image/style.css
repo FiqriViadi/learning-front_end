@@ -93,3 +93,28 @@ h3 {
     height: auto;
     margin: 20px auto;
 }
+
+/* image / card polaroid */
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 10px;
+    place-items: center;
+}
+.card .polaroid {
+    border: 1px solid rgba(128, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(128, 77, 0, 0.5);
+    text-align: center;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+.card .polaroid:hover {
+    border: 1px solid rgba(128, 0, 0, 1);
+    box-shadow: 0 0 10px rgba(128, 77, 0, 1);
+}
+.card .polaroid img {
+    width: 240px;
+    height: auto;
+}
