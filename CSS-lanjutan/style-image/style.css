@@ -58,3 +58,31 @@ h3 {
     border-radius: 50%;
     box-shadow: 0 0 20px burlywood, 0 0 20px black;
 }
+
+/* thumbnail image */
+/* menggunakan border */
+.thumbnail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 20px;
+    place-items: center;
+}
+.thumbnail1 {
+    width: 300px;
+    height: auto;
+    border: 2px solid maroon;
+    padding: 5px;
+}
+.thumbnail2 {
+    width: 300px;
+    height: auto;
+    border: 2px solid rgba(128, 0, 0, 0.3);
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.thumbnail2:hover {
+    border: 2px solid rgba(128, 0, 0, 1);
+    transform: scale(1.02);
+}
