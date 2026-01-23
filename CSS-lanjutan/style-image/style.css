@@ -50,13 +50,17 @@ h3 {
   height: 200px;
   border-radius: 10px;
   margin: 10px auto;
-  box-shadow: 0 0 20px burlywood, 0 0 20px black;
+  box-shadow:
+    0 0 20px burlywood,
+    0 0 20px black;
 }
 .bulat2 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 0 20px burlywood, 0 0 20px black;
+  box-shadow:
+    0 0 20px burlywood,
+    0 0 20px black;
 }
 
 /* thumbnail image */
@@ -201,125 +205,125 @@ h3 {
   border: 2px solid black;
 }
 .card .fadeIn-text {
-    position: relative;
-    width: 250px;
+  position: relative;
+  width: 250px;
 }
 .card .fadeIn-text .image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .card .fadeIn-text .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: silver;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: silver;
 }
 .card .fadeIn-text:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 .card .fadeIn-text .overlay .text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* fade-in box */
 .card .fadeIn-box {
-    position: relative;
-    width: 250px;
+  position: relative;
+  width: 250px;
 }
 .card .fadeIn-box .image {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1;
-    transition: 0.5s ease;
-    /* backface-visibility: hidden; - Properti ini menyembunyikan sisi belakang elemen saat elemen tersebut dirotasi dalam transformasi 3D.
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  /* backface-visibility: hidden; - Properti ini menyembunyikan sisi belakang elemen saat elemen tersebut dirotasi dalam transformasi 3D.
        Hal ini mencegah sisi belakang terlihat dan menghindari efek flicker atau tampilan yang tidak diinginkan pada animasi 3D. */
-    backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .card .fadeIn-box:hover .image {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .card .fadeIn-box .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    /* -ms-transform: translate(-50%,-50%) - Properti vendor-specific untuk Microsoft (sebelumnya digunakan di IE).
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%,-50%) - Properti vendor-specific untuk Microsoft (sebelumnya digunakan di IE).
       Ini menggeser elemen ke kiri dan ke atas sebesar 50% dari lebar dan tinggi elemen itu sendiri,
        yang digunakan untuk memusatkan elemen secara absolut di dalam kontainer induknya. */
-    -ms-transform: translate(-50%, -50%);
-    transition: 0.5s ease;
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
 }
 .card .fadeIn-box:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 .card .fadeIn-box .overlay .box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: bisque;
-    padding: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: bisque;
+  padding: 5px;
 }
 /* slide-in top */
 .card .slideIn-top {
-    position: relative;
-    width: 250px;
+  position: relative;
+  width: 250px;
 }
 .card .slideIn-top .image {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1;
-    transition: 0.5s ease;
-    /* backface-visibility: hidden; - Properti ini menyembunyikan sisi belakang elemen saat elemen tersebut dirotasi dalam transformasi 3D.
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  /* backface-visibility: hidden; - Properti ini menyembunyikan sisi belakang elemen saat elemen tersebut dirotasi dalam transformasi 3D.
        Hal ini mencegah sisi belakang terlihat dan menghindari efek flicker atau tampilan yang tidak diinginkan pada animasi 3D. */
-    backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .card .slideIn-top:hover .image {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .card .slideIn-top .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    /* -ms-transform: translate(-50%,-50%) - Properti vendor-specific untuk Microsoft (sebelumnya digunakan di IE).
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%,-50%) - Properti vendor-specific untuk Microsoft (sebelumnya digunakan di IE).
       Ini menggeser elemen ke kiri dan ke atas sebesar 50% dari lebar dan tinggi elemen itu sendiri,
        yang digunakan untuk memusatkan elemen secara absolut di dalam kontainer induknya. */
-    -ms-transform: translate(-50%, -50%);
-    transition: 0.5s ease;
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
 }
 .card .slideIn-top:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 .card .slideIn-top .overlay .box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: bisque;
-    padding: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: bisque;
+  padding: 5px;
 }
