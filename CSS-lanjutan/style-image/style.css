@@ -204,6 +204,9 @@ h3 {
   background-color: rgba(87, 48, 20, 0.5);
   border: 2px solid black;
 }
+.card-container .card img {
+  border-top: 1px solid black;
+}
 .card .fadeIn-text {
   position: relative;
   width: 250px;
