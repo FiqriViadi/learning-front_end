@@ -475,3 +475,16 @@ h3 {
   border: 10px solid silver;
   box-shadow: 0 0 20px silver;
 }
+
+/* flip dan gambar */
+.flip-card {
+  text-align: center;
+}
+.flip-card .flip-card-front img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px greenyellow, -5px -5px 10px goldenrod;
+}
+.flip-card .flip-card-front img:hover {
+  transform: scaleX(-1);
+}
