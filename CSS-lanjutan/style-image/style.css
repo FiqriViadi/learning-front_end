@@ -481,7 +481,7 @@ h3 {
   text-align: center;
 }
 .flip-card .flip-card-front img {
-  width: 100%;
+  width: 300px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px greenyellow, -5px -5px 10px goldenrod;
 }
