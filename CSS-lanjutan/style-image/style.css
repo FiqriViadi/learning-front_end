@@ -488,3 +488,18 @@ h3 {
 .flip-card .flip-card-front img:hover {
   transform: scaleX(-1);
 }
+
+/* responsive image gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+}
+.gallery img {
+  width: 210px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
