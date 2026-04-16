@@ -6,6 +6,7 @@ body {
 span {
   color: red;
   font-weight: bold;
+  text-decoration: underline;
 }
 code {
   font-size: 14px;
