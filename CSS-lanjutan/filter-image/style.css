@@ -195,3 +195,35 @@ transform: scale(1.03);
 .grayscale .card #img3 {
   filter: grayscale(0%);
 }
+
+/* effeck hue-rotate() */
+.hue-rotate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+  text-align: center;
+}
+.hue-rotate .card {
+  border: 1px solid silver;
+  transition: 0.5s ease;
+}
+.hue-rotate .card:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.03);
+}
+.hue-rotate .card img {
+  width: 100%;
+  height: auto;
+}
+.hue-rotate .card #img1 {
+  filter: hue-rotate(90deg);
+}
+.hue-rotate .card #img2 {
+  filter: hue-rotate(180deg);
+}
+.hue-rotate .card #img3 {
+  filter: hue-rotate(-90deg);
+}
