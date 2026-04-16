@@ -67,3 +67,19 @@ h3 {
 .circle .full #img2 {
     clip-path: circle(50% at right);
 }
+
+/* shape-outside and circle() */
+.shape-outside {
+    border: 1px solid #000000;
+    padding: 10px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+.shape-outside img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    clip-path: circle(40%);
+    shape-outside: circle(45%);
+}
