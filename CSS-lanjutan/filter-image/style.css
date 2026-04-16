@@ -323,3 +323,35 @@ transform: scale(1.03);
 .saturate .card #img3 {
   filter: saturate(0%);
 }
+
+/* effeck sepia() */
+.sepia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+  text-align: center;
+}
+.sepia .card {
+  border: 1px solid silver;
+  transition: 0.5s ease;
+}
+.sepia .card:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.03);
+}
+.sepia .card img {
+  width: 100%;
+  height: auto;
+}
+.sepia .card #img1 {
+  filter: sepia(100%);
+}
+.sepia .card #img2 {
+  filter: sepia(50%);
+}
+.sepia .card #img3 {
+  filter: sepia(0%);
+}
