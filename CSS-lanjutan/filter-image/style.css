@@ -65,7 +65,7 @@ h3 {
   filter: blur(4px);
 }
 .blur .card #img3 {
-  filter: blur();
+  filter: blur(0px);
 }
 
 /* effeck brightness() */
@@ -97,7 +97,7 @@ h3 {
   filter: brightness(75%);
 }
 .brightness .card #img3 {
-  filter: brightness();
+  filter: brightness(0%);
 }
 
 /* effeck contrast() */
@@ -129,7 +129,7 @@ transform: scale(1.03);
   filter: contrast(75%);
 }
 .contracts .card #img3 {
-  filter: contrast();
+  filter: contrast(0%);
 }
 
 /* effect drop-shadow() */
@@ -162,4 +162,36 @@ transform: scale(1.03);
 }
 .drop-shadow .card #img3 {
   filter: drop-shadow(0px 5px 5px green);
+}
+
+/* effect grayscale() */
+.grayscale {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+  text-align: center;
+}
+.grayscale .card {
+  border: 1px solid silver;
+  transition: 0.5s ease;
+}
+.grayscale .card:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.03);
+}
+.grayscale .card img {
+  width: 100%;
+  height: auto;
+}
+.grayscale .card #img1 {
+  filter: grayscale(100%);
+}
+.grayscale .card #img2 {
+  filter: grayscale(50%);
+}
+.grayscale .card #img3 {
+  filter: grayscale(0%);
 }
