@@ -99,3 +99,35 @@ h3 {
 .brightness .card #img3 {
   filter: brightness();
 }
+
+/* effeck contrast() */
+.contrast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+  text-align: center;
+}
+.contrast .card {
+  border: 1px solid silver;
+  transition: 0.5s ease;
+}
+.contrast .card:hover {
+border: 1px solid black;
+box-shadow: 0 0 10px black;
+transform: scale(1.03);
+}
+.contrast .card img {
+  width: 100%;
+  height: auto;
+}
+.contrast .card #img1 {
+  filter: contrast(150%);
+}
+.contracts .card #img2 {
+  filter: contrast(75%);
+}
+.contracts .card #img3 {
+  filter: contrast();
+}
