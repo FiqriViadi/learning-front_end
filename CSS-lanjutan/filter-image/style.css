@@ -67,3 +67,35 @@ h3 {
 .blur .card #img3 {
   filter: blur();
 }
+
+/* effeck brightness() */
+.brightness {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+  place-items: center;
+  text-align: center;
+}
+.brightness .card {
+  border: 1px solid silver;
+  transition: 0.5s ease;
+}
+.brightness .card:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.03);
+}
+.brightness .card img {
+  width: 100%;
+  height: auto;
+}
+.brightness .card #img1 {
+  filter: brightness(150%);
+}
+.brightness .card #img2 {
+  filter: brightness(75%);
+}
+.brightness .card #img3 {
+  filter: brightness();
+}
