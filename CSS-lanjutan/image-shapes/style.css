@@ -93,12 +93,32 @@ h3 {
   place-items: center;
   text-align: center;
 }
+.ellipse:hover > .card:not(:hover) {
+  filter: blur(2px);
+}
 .ellipse .card {
+  height: 280px;
+  padding: 10px;
   border: 1px solid #000000;
   border-radius: 10px;
+  transition: 0.5s ease;
+}
+.ellipse .card:hover {
+  box-shadow: 0 0 10px black;
 }
 .ellipse .card img {
-  width: 100%;
+  width: 220px;
   height: auto;
-  border-radius: 10px 10px 0px 0px;
+}
+.ellipse .card #img1 {
+  clip-path: ellipse(50% 35% at center);
+}
+.ellipse .card #img2 {
+  clip-path: ellipse(50% 35%);
+}
+.ellipse .card #img3 {
+  clip-path: ellipse(50% 35% at right);
+}
+.ellipse .card #img4 {
+  clip-path: ellipse(50% 35% at left);
 }
