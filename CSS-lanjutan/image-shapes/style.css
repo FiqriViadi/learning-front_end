@@ -83,3 +83,5 @@ h3 {
     clip-path: circle(40%);
     shape-outside: circle(45%);
 }
+
+/* fungsi clip-path dan ellipse() */
