@@ -85,8 +85,6 @@ h3 {
 }
 
 /* fungsi clip-path dan ellipse() */
-/* Bagian ellipse */
-/* Layout grid untuk kartu dengan bentuk ellipse dan teks yang terpusat */
 .ellipse {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -95,16 +93,10 @@ h3 {
   place-items: center;
   text-align: center;
 }
-
-/* Styling kartu */
-/* Kartu diberi border dan sudut membulat */
 .ellipse .card {
   border: 1px solid #000000;
   border-radius: 10px;
 }
-
-/* Styling gambar di dalam kartu */
-/* Hanya sudut bagian atas gambar yang melengkung */
 .ellipse .card img {
   width: 100%;
   height: auto;
