@@ -39,49 +39,49 @@ h3 {
 
 /* circle */
 .circle {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
-    gap: 20px;
-    place-items: center;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+  place-items: center;
+  text-align: center;
 }
 .circle .full {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    height: 270px;
-    width: 220px;
-    transition: 0.5s ease;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  height: 270px;
+  width: 220px;
+  transition: 0.5s ease;
 }
 .circle .full:hover {
-    box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
-.circle .full img{
-    width: 200px;
-    height: auto;
+.circle .full img {
+  width: 200px;
+  height: auto;
 }
 .circle .full #img1 {
-    clip-path: circle(50%);
+  clip-path: circle(50%);
 }
 .circle .full #img2 {
-    clip-path: circle(50% at right);
+  clip-path: circle(50% at right);
 }
 
 /* shape-outside and circle() */
 .shape-outside {
-    border: 1px solid #000000;
-    padding: 10px;
-    height: auto;
-    margin: 20px;
-    border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 10px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
 }
 .shape-outside img {
-    width: 200px;
-    height: 200px;
-    float: left;
-    clip-path: circle(40%);
-    shape-outside: circle(45%);
+  width: 200px;
+  height: 200px;
+  float: left;
+  clip-path: circle(40%);
+  shape-outside: circle(45%);
 }
 
 /* fungsi clip-path dan ellipse() */
@@ -154,4 +154,18 @@ h3 {
 .polygon img {
   width: 220px;
   height: auto;
+  /*
+   * clip-path: polygon() - Creates a hexagonal shape
+   * 
+   * Coordinates breakdown:
+   * 50% 0%    - Top center point
+   * 100% 25%  - Top right point
+   * 100% 75%  - Bottom right point
+   * 50% 100%  - Bottom center point
+   * 0% 75%    - Bottom left point
+   * 0% 25%    - Top left point
+   * 
+   * Result: A regular hexagon with equal spacing between vertices
+   */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
