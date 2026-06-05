@@ -125,18 +125,21 @@ h3 {
 
 /* shape-outside and ellipse() */
 .shape-outside-ellipse {
-  border: 1px solid #000000;
-  padding: 10px;
-  height: auto;
-  margin: 20px;
-  border-radius: 10px;
+  border: 1px solid black;
+padding: 10px;
+border-radius: 10px;
 }
 .shape-outside-ellipse img {
   width: 220px;
   height: 220px;
   float: left;
-  clip-path: ellipse(40% 50%);
+  clip-path: ellipse(40% 50%); 
   shape-outside: ellipse(45% 50%);
+  transition: 0.5s ease;
+}
+.shape-outside-ellipse img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* fungsi polygon() */
